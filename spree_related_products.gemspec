@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.1.0'
 
   s.author       = 'Brian Quinn'
-  s.email        = 'brian@railsdog.com'
-  s.homepage     = 'https://github.com/spree-contrib/spree_related_products'
+  s.email        = 'lexuszhi1990@gmail.com'
+  s.homepage     = 'https://github.com/lexuszhi1990/spree_related_products'
   s.license      = 'BSD-3'
 
   s.files        = `git ls-files`.split("\n")
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
 
   s.has_rdoc = false
 
-  s.add_runtime_dependency 'spree_backend', '~> 3.1.0.beta'
+  s.add_runtime_dependency 'solidus_backend', '~> 1.2.0'
 
   s.add_development_dependency 'factory_girl', '4.4'
   s.add_development_dependency 'ffaker'
