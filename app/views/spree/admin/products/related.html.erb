@@ -15,7 +15,7 @@
         <div id="related_product_name" class="col-md-5">
           <div class="form-group">
             <%= label_tag :add_variant_name, Spree.t(:name_or_sku_short) %>
-            <%= hidden_field_tag :add_variant_name, '', class: 'product_autocomplete', style: "display: block !important;" %>
+            <%= hidden_field_tag :add_variant_name, '', class: 'variant_autocomplete', style: "display: block !important;" %>
           </div>
         </div>
         <div id="related_product_type" class="col-md-4">
@@ -65,7 +65,6 @@
 
       $(function () {
         $('#add_variant_name.variant_autocomplete').variantAutocomplete();
-        // $('#add_product_name.product_autocomplete').productAutocomplete();
       });
     </script>
   <% end %>
