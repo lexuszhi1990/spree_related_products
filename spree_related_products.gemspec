@@ -5,7 +5,7 @@ require 'spree_related_products/version'
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_related_products'
+  s.name        = 'solidus_related_products'
   s.version     = SpreeRelatedProducts.version
   s.summary     = 'Allows multiple types of relationships between products to be defined'
   s.description = s.summary
