@@ -14,8 +14,8 @@
       <div class="row">
         <div id="related_product_name" class="col-md-5">
           <div class="form-group">
-            <%= label_tag :add_variant_name, Spree.t(:name_or_sku_short) %>
-            <%= hidden_field_tag :add_variant_name, '', class: 'variant_autocomplete', style: "display: block !important;" %>
+            <%= label_tag :add_product_name, Spree.t(:name_or_sku_short) %>
+            <%= hidden_field_tag :add_product_name, '', class: 'product_autocomplete', style: "display: block !important;" %>
           </div>
         </div>
         <div id="related_product_type" class="col-md-4">
@@ -47,7 +47,7 @@
     <script type="text/javascript">
       var expand_variants = false;
       $(document).on('click', '#add_related_product', function(){
-        if($('#add_variant_name').val() == '') { return false; }
+        if($('#add_product_name').val() == '') { return false; }
         update_target = $(this).data('update');
         $.ajax({
           dataType: 'script',
@@ -55,7 +55,7 @@
           type: 'POST',
           data: {
             'relation[related_to_type]' : 'Product',
-            'relation[related_to_id]': $('#add_variant_name').val(),
+            'relation[related_to_id]': $('#add_product_name').val(),
             'relation[relation_type_id]': $('#add_type').val(),
             'relation[discount_amount]' : $('#add_discount').val()
           }
@@ -64,7 +64,8 @@
       });
 
       $(function () {
-        $('#add_variant_name.variant_autocomplete').variantAutocomplete();
+        // $('#add_variant_name.variant_autocomplete').variantAutocomplete();
+        $('#add_variant_name.variant_autocomplete').productAutocomplete();
       });
     </script>
   <% end %>
