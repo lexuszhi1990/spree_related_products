@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.description = s.summary
   s.required_ruby_version = '>= 2.1.0'
 
-  s.author       = 'Brian Quinn'
+  s.author       = 'david lingzhi'
   s.email        = 'lexuszhi1990@gmail.com'
   s.homepage     = 'https://github.com/lexuszhi1990/spree_related_products'
   s.license      = 'BSD-3'
