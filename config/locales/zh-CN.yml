@@ -13,6 +13,7 @@ zh-CN:
     related_product_discount: Related Product Discount
     applies_to: Applies To
     add_related_product: "添加推荐商品"
+    related_products: "推荐商品"
     name_or_sku_short: 名称或条纹码
     no_relation_types: 请先添加推荐关系类型，然后才能添加推荐商品
     admin:
