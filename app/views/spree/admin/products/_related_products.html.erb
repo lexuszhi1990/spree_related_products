@@ -1,5 +1,3 @@
 <% if can?(:admin, Spree::Relation) %>
-  <li<%== ' class="active"' if current == "Related Products" %>>
-    <%= link_to_with_icon 'thumbs-up', Spree.t(:relation_types, scope: [:admin, :tab]), related_admin_product_url(@product) %>
-  </li>
+  <%= tab [:relation_types], url: related_admin_product_url(@product), icon: 'thumbs-up' %>
 <% end %>
