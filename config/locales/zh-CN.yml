@@ -6,11 +6,11 @@ zh-CN:
         one: Relation
         other: Relations
       spree/relation_type:
-        one: Relation Type
-        other: Relation Types
+        one: '推荐商品类型'
+        other: '推荐商品类型'
   spree:
-    new_relation_type: ""
-    related_product_discount: Related Product Discount
+    new_relation_type: "创建推荐商品类型"
+    related_product_discount: "推荐商品折扣"
     applies_to: Applies To
     add_related_product: "添加推荐商品"
     related_products: "推荐商品"
