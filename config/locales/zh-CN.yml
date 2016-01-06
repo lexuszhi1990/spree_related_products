@@ -19,3 +19,4 @@ zh-CN:
     admin:
       tab:
         relation_types: "推荐商品类型"
+        relations: "推荐商品"
