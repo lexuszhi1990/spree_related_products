@@ -10,6 +10,10 @@ module SpreeRelatedProducts
       app.config.spree.calculators.promotion_actions_create_adjustments << Spree::Calculator::RelatedProductDiscount
     end
 
+    initializer "spree_related_products.preference", :before => :load_config_initializers do |app|
+      SpreeRelatedProducts::Config = Spree::RelatedProductConfiguration.new
+    end
+
     class << self
       def activate
         cache_klasses = %W(#{config.root}/app/**/*_decorator*.rb)
